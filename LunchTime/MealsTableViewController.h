@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Meal.h"
+#import "AddMealViewController.h"
 
 @interface MealsTableViewController : UITableViewController <UITabBarControllerDelegate, UITableViewDataSource>
 

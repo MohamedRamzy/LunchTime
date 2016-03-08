@@ -57,6 +57,9 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Nhf-KF-FBi" kind="show" identifier="showDetails" id="nJB-XT-zIy"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -91,15 +94,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOy-N3-BlP">
-                                <rect key="frame" x="137" y="247" width="30" height="30"/>
-                                <state key="normal" title="Add">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="addMeal:" destination="Nhf-KF-FBi" eventType="touchUpInside" id="X0z-Z6-EWL"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Nd-d4-7m1">
                                 <rect key="frame" x="46" y="184" width="205" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -108,18 +102,32 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star_gray" translatesAutoresizingMaskIntoConstraints="NO" id="7hC-rk-YAV">
                                 <rect key="frame" x="259" y="184" width="30" height="30"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOy-N3-BlP">
+                                <rect key="frame" x="92" y="247" width="137" height="30"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addMeal:" destination="Nhf-KF-FBi" eventType="touchUpInside" id="X0z-Z6-EWL"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBz-kr-rjh">
+                                <rect key="frame" x="110" y="76" width="100" height="100"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="iconImageView" destination="7hC-rk-YAV" id="Rnq-dw-ng8"/>
+                        <outlet property="addSaveButton" destination="sOy-N3-BlP" id="CsO-Vr-ldO"/>
+                        <outlet property="iconImageView" destination="ZBz-kr-rjh" id="EqK-3j-ZBQ"/>
                         <outlet property="mealNameLabel" destination="6Nd-d4-7m1" id="a2D-Hb-wko"/>
+                        <outlet property="starImageView" destination="7hC-rk-YAV" id="tMH-yO-OLe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1W9-Oa-004" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1651" y="213"/>
+            <point key="canvasLocation" x="1825" y="92"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="IOw-8v-JL1">
@@ -171,4 +179,7 @@
         <image name="meals_bar_icon" width="50" height="50"/>
         <image name="star_gray" width="120" height="120"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nJB-XT-zIy"/>
+    </inferredMetricsTieBreakers>
 </document>

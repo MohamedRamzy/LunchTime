@@ -12,9 +12,9 @@
 
 @required
 - (void) addMeal:(Meal*) meal;
-
 @end
 
 @interface AddMealViewController : UIViewController
 
+@property (nonatomic,strong) Meal* currentMeal;
 @end
