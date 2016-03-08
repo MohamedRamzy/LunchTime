@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dIS-cy-c40">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Favourites-->
+        <scene sceneID="2yW-yI-jAp">
+            <objects>
+                <viewController id="d79-OJ-dWg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wif-O9-oQ7"/>
+                        <viewControllerLayoutGuide type="bottom" id="glM-KT-fBy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fji-Fe-r3e">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favourites" image="fav_bar_icon" id="Fwt-jV-JVh"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTm-R4-Pwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236" y="840"/>
+        </scene>
+        <!--Meals Table View Controller-->
+        <scene sceneID="OHb-mk-zuO">
+            <objects>
+                <viewController id="5HM-Q2-xOR" customClass="MealsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="0C6-Sq-myz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="475"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MealCell" textLabel="quI-Tl-WxQ" detailTextLabel="Vw2-0H-c1z" imageView="h3R-Sy-u02" style="IBUITableViewCellStyleSubtitle" id="iby-Nh-g0g">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iby-Nh-g0g" id="dYb-42-cF6">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="quI-Tl-WxQ">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vw2-0H-c1z">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="chicken" id="h3R-Sy-u02">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5HM-Q2-xOR" id="QsV-Qr-zui"/>
+                            <outlet property="delegate" destination="5HM-Q2-xOR" id="FmK-iv-07F"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="wju-G2-BSR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yn2-PH-kyn">
+                            <connections>
+                                <segue destination="Nhf-KF-FBi" kind="show" id="tZ6-js-mES"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IET-Ns-vGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236" y="199"/>
+        </scene>
+        <!--Add Meal View Controller-->
+        <scene sceneID="KET-wz-3Oe">
+            <objects>
+                <viewController id="Nhf-KF-FBi" customClass="AddMealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Jo-k5-zZk"/>
+                        <viewControllerLayoutGuide type="bottom" id="VaE-9G-xut"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gjh-eo-tKu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOy-N3-BlP">
+                                <rect key="frame" x="137" y="247" width="30" height="30"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addMeal:" destination="Nhf-KF-FBi" eventType="touchUpInside" id="X0z-Z6-EWL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Nd-d4-7m1">
+                                <rect key="frame" x="46" y="184" width="205" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star_gray" translatesAutoresizingMaskIntoConstraints="NO" id="7hC-rk-YAV">
+                                <rect key="frame" x="259" y="184" width="30" height="30"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="iconImageView" destination="7hC-rk-YAV" id="Rnq-dw-ng8"/>
+                        <outlet property="mealNameLabel" destination="6Nd-d4-7m1" id="a2D-Hb-wko"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1W9-Oa-004" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1651" y="213"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IOw-8v-JL1">
+            <objects>
+                <tabBarController id="dIS-cy-c40" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="znO-qC-ayN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gvu-6d-gLa" kind="relationship" relationship="viewControllers" id="NHE-tC-VWv"/>
+                        <segue destination="d79-OJ-dWg" kind="relationship" relationship="viewControllers" id="cbN-hN-vOu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVR-gy-YJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="217" y="534"/>
+        </scene>
+        <!--Meals-->
+        <scene sceneID="DPd-KH-sGc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gvu-6d-gLa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Meals" image="meals_bar_icon" id="9ZX-DQ-XGy"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="n9z-ZS-Tgt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5HM-Q2-xOR" kind="relationship" relationship="rootViewController" id="T3e-B4-ziO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n08-rq-ein" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="199"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chicken" width="128" height="128"/>
+        <image name="fav_bar_icon" width="50" height="50"/>
+        <image name="meals_bar_icon" width="50" height="50"/>
+        <image name="star_gray" width="120" height="120"/>
+    </resources>
+</document>

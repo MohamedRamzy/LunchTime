@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E0F81B91C8E834500DCCDF5 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F81B81C8E834500DCCDF5 /* Meal.m */; };
+		8E0F81BC1C8E8D2B00DCCDF5 /* AddMealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F81BB1C8E8D2B00DCCDF5 /* AddMealViewController.m */; };
+		8E2DC81E1C8E759D00A3DF8C /* MealsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2DC81D1C8E759D00A3DF8C /* MealsTableViewController.m */; };
+		8ECE16FA1C8E69F600E0CA32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE16F91C8E69F600E0CA32 /* main.m */; };
+		8ECE16FD1C8E69F600E0CA32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE16FC1C8E69F600E0CA32 /* AppDelegate.m */; };
+		8ECE17001C8E69F600E0CA32 /* LunchTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE16FE1C8E69F600E0CA32 /* LunchTime.xcdatamodeld */; };
+		8ECE17061C8E69F600E0CA32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECE17041C8E69F600E0CA32 /* Main.storyboard */; };
+		8ECE17081C8E69F600E0CA32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ECE17071C8E69F600E0CA32 /* Images.xcassets */; };
+		8ECE170B1C8E69F600E0CA32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ECE17091C8E69F600E0CA32 /* LaunchScreen.xib */; };
+		8ECE17171C8E69F600E0CA32 /* LunchTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE17161C8E69F600E0CA32 /* LunchTimeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8ECE17111C8E69F600E0CA32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ECE16EC1C8E69F600E0CA32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ECE16F31C8E69F600E0CA32;
+			remoteInfo = LunchTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E0F81B71C8E834500DCCDF5 /* Meal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
+		8E0F81B81C8E834500DCCDF5 /* Meal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		8E0F81BA1C8E8D2B00DCCDF5 /* AddMealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMealViewController.h; sourceTree = "<group>"; };
+		8E0F81BB1C8E8D2B00DCCDF5 /* AddMealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMealViewController.m; sourceTree = "<group>"; };
+		8E2DC81C1C8E759D00A3DF8C /* MealsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealsTableViewController.h; sourceTree = "<group>"; };
+		8E2DC81D1C8E759D00A3DF8C /* MealsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealsTableViewController.m; sourceTree = "<group>"; };
+		8ECE16F41C8E69F600E0CA32 /* LunchTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECE16F81C8E69F600E0CA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ECE16F91C8E69F600E0CA32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8ECE16FB1C8E69F600E0CA32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8ECE16FC1C8E69F600E0CA32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8ECE16FF1C8E69F600E0CA32 /* LunchTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LunchTime.xcdatamodel; sourceTree = "<group>"; };
+		8ECE17051C8E69F600E0CA32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8ECE17071C8E69F600E0CA32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8ECE170A1C8E69F600E0CA32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8ECE17101C8E69F600E0CA32 /* LunchTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunchTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECE17151C8E69F600E0CA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ECE17161C8E69F600E0CA32 /* LunchTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LunchTimeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8ECE16F11C8E69F600E0CA32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECE170D1C8E69F600E0CA32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E0F81B61C8E832A00DCCDF5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8E0F81B71C8E834500DCCDF5 /* Meal.h */,
+				8E0F81B81C8E834500DCCDF5 /* Meal.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		8E2DC81B1C8E702900A3DF8C /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				8E2DC81C1C8E759D00A3DF8C /* MealsTableViewController.h */,
+				8E2DC81D1C8E759D00A3DF8C /* MealsTableViewController.m */,
+				8E0F81BA1C8E8D2B00DCCDF5 /* AddMealViewController.h */,
+				8E0F81BB1C8E8D2B00DCCDF5 /* AddMealViewController.m */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		8ECE16EB1C8E69F600E0CA32 = {
+			isa = PBXGroup;
+			children = (
+				8ECE16F61C8E69F600E0CA32 /* LunchTime */,
+				8ECE17131C8E69F600E0CA32 /* LunchTimeTests */,
+				8ECE16F51C8E69F600E0CA32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8ECE16F51C8E69F600E0CA32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ECE16F41C8E69F600E0CA32 /* LunchTime.app */,
+				8ECE17101C8E69F600E0CA32 /* LunchTimeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ECE16F61C8E69F600E0CA32 /* LunchTime */ = {
+			isa = PBXGroup;
+			children = (
+				8E0F81B61C8E832A00DCCDF5 /* model */,
+				8E2DC81B1C8E702900A3DF8C /* ui */,
+				8ECE16FB1C8E69F600E0CA32 /* AppDelegate.h */,
+				8ECE16FC1C8E69F600E0CA32 /* AppDelegate.m */,
+				8ECE17041C8E69F600E0CA32 /* Main.storyboard */,
+				8ECE17071C8E69F600E0CA32 /* Images.xcassets */,
+				8ECE17091C8E69F600E0CA32 /* LaunchScreen.xib */,
+				8ECE16FE1C8E69F600E0CA32 /* LunchTime.xcdatamodeld */,
+				8ECE16F71C8E69F600E0CA32 /* Supporting Files */,
+			);
+			path = LunchTime;
+			sourceTree = "<group>";
+		};
+		8ECE16F71C8E69F600E0CA32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ECE16F81C8E69F600E0CA32 /* Info.plist */,
+				8ECE16F91C8E69F600E0CA32 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8ECE17131C8E69F600E0CA32 /* LunchTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8ECE17161C8E69F600E0CA32 /* LunchTimeTests.m */,
+				8ECE17141C8E69F600E0CA32 /* Supporting Files */,
+			);
+			path = LunchTimeTests;
+			sourceTree = "<group>";
+		};
+		8ECE17141C8E69F600E0CA32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ECE17151C8E69F600E0CA32 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8ECE16F31C8E69F600E0CA32 /* LunchTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECE171A1C8E69F600E0CA32 /* Build configuration list for PBXNativeTarget "LunchTime" */;
+			buildPhases = (
+				8ECE16F01C8E69F600E0CA32 /* Sources */,
+				8ECE16F11C8E69F600E0CA32 /* Frameworks */,
+				8ECE16F21C8E69F600E0CA32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LunchTime;
+			productName = LunchTime;
+			productReference = 8ECE16F41C8E69F600E0CA32 /* LunchTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8ECE170F1C8E69F600E0CA32 /* LunchTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECE171D1C8E69F600E0CA32 /* Build configuration list for PBXNativeTarget "LunchTimeTests" */;
+			buildPhases = (
+				8ECE170C1C8E69F600E0CA32 /* Sources */,
+				8ECE170D1C8E69F600E0CA32 /* Frameworks */,
+				8ECE170E1C8E69F600E0CA32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ECE17121C8E69F600E0CA32 /* PBXTargetDependency */,
+			);
+			name = LunchTimeTests;
+			productName = LunchTimeTests;
+			productReference = 8ECE17101C8E69F600E0CA32 /* LunchTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8ECE16EC1C8E69F600E0CA32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Mohamed Ramzy";
+				TargetAttributes = {
+					8ECE16F31C8E69F600E0CA32 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					8ECE170F1C8E69F600E0CA32 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 8ECE16F31C8E69F600E0CA32;
+					};
+				};
+			};
+			buildConfigurationList = 8ECE16EF1C8E69F600E0CA32 /* Build configuration list for PBXProject "LunchTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8ECE16EB1C8E69F600E0CA32;
+			productRefGroup = 8ECE16F51C8E69F600E0CA32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ECE16F31C8E69F600E0CA32 /* LunchTime */,
+				8ECE170F1C8E69F600E0CA32 /* LunchTimeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ECE16F21C8E69F600E0CA32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECE17061C8E69F600E0CA32 /* Main.storyboard in Resources */,
+				8ECE170B1C8E69F600E0CA32 /* LaunchScreen.xib in Resources */,
+				8ECE17081C8E69F600E0CA32 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECE170E1C8E69F600E0CA32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ECE16F01C8E69F600E0CA32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0F81B91C8E834500DCCDF5 /* Meal.m in Sources */,
+				8ECE16FD1C8E69F600E0CA32 /* AppDelegate.m in Sources */,
+				8ECE17001C8E69F600E0CA32 /* LunchTime.xcdatamodeld in Sources */,
+				8E0F81BC1C8E8D2B00DCCDF5 /* AddMealViewController.m in Sources */,
+				8E2DC81E1C8E759D00A3DF8C /* MealsTableViewController.m in Sources */,
+				8ECE16FA1C8E69F600E0CA32 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECE170C1C8E69F600E0CA32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECE17171C8E69F600E0CA32 /* LunchTimeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8ECE17121C8E69F600E0CA32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ECE16F31C8E69F600E0CA32 /* LunchTime */;
+			targetProxy = 8ECE17111C8E69F600E0CA32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8ECE17041C8E69F600E0CA32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ECE17051C8E69F600E0CA32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8ECE17091C8E69F600E0CA32 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ECE170A1C8E69F600E0CA32 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8ECE17181C8E69F600E0CA32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8ECE17191C8E69F600E0CA32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8ECE171B1C8E69F600E0CA32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LunchTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8ECE171C1C8E69F600E0CA32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LunchTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8ECE171E1C8E69F600E0CA32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LunchTimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LunchTime.app/LunchTime";
+			};
+			name = Debug;
+		};
+		8ECE171F1C8E69F600E0CA32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LunchTimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LunchTime.app/LunchTime";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ECE16EF1C8E69F600E0CA32 /* Build configuration list for PBXProject "LunchTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECE17181C8E69F600E0CA32 /* Debug */,
+				8ECE17191C8E69F600E0CA32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECE171A1C8E69F600E0CA32 /* Build configuration list for PBXNativeTarget "LunchTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECE171B1C8E69F600E0CA32 /* Debug */,
+				8ECE171C1C8E69F600E0CA32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECE171D1C8E69F600E0CA32 /* Build configuration list for PBXNativeTarget "LunchTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECE171E1C8E69F600E0CA32 /* Debug */,
+				8ECE171F1C8E69F600E0CA32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8ECE16FE1C8E69F600E0CA32 /* LunchTime.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8ECE16FF1C8E69F600E0CA32 /* LunchTime.xcdatamodel */,
+			);
+			currentVersion = 8ECE16FF1C8E69F600E0CA32 /* LunchTime.xcdatamodel */;
+			path = LunchTime.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8ECE16EC1C8E69F600E0CA32 /* Project object */;
+}
